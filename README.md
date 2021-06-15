@@ -17,8 +17,15 @@
 ```
 
 ## 미션 진행 방법
-1. [rock-paper-scissors](https://github.com/banjjoknim/rock-paper-scissors) 저장소를 본인 GitHub 계정으로 fork 한다.
-2. 본인 GitHub 계정과 같은 이름의 브랜치를 만든다.
+1. [rock-paper-scissors](https://github.com/banjjoknim/rock-paper-scissors) 저장소를 본인 GitHub 계정으로 `fork` 한다.
+2. `fork`한 본인 계정 내의 저장소에서, `main` 브랜치로부터 본인 GitHub 계정과 같은 이름의 브랜치를 만든다.
 3. 해당 브랜치에서 미션을 수행한다.
-4. 미션을 완료했다면 리뷰어에게 이 사실을 고지한다.
-5. 리뷰를 받았다면 해당 피드백을 반영한 뒤 리뷰어가 Merge 할 때 까지 위 과정을 반복한다.
+4. 미션을 완료했다면 원본 저장소의 본인 계정과 같은 이름의 브랜치로 `Pull Request`를 보낸다. 이때, `Pull Request`는 최초 1회만 진행하면 된다. 그 이후로는 만들어진 `Pull Request`에서 리뷰가 진행된다.
+5. 미션(또는 피드백 반영)이 완료되었음을 리뷰어에게 고지한다.
+6. 리뷰를 통해 피드백을 받았다면 해당 피드백을 반영한 뒤 리뷰어가 해당 `Pull Request`를 `Merge` 할 때 까지 `3 ~ 5`의 과정을 반복한다.
+
+
+```
+ex) GitHub 계정 이름이 banjjoknim이라면, banjjoknim 브랜치로 checkout 한 뒤, 미션 진행. 
+미션 진행을 완료했다면 원본 저장소의 banjjoknim 브랜치로 Pull Request를 보내고, 리뷰어에게 해당 내용을 고지한다.
+```
