@@ -16,6 +16,12 @@
 결과 : 승리
 ```
 
+## 프로그래밍 요구 사항
+- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)를 참고하여 컨벤션을 지키도록 노력한다.
+- 들여쓰기 depth는 2이하로 제한한다.
+- 메서드의 길이는 15줄 이하로 제한한다.
+- 가능한 한 하나의 메서드는 하나의 일만 하도록 한다.
+
 ## 미션 진행 방법
 1. [rock-paper-scissors](https://github.com/banjjoknim/rock-paper-scissors) 저장소를 본인 GitHub 계정으로 `fork` 한다.
 2. `fork`한 본인 계정 내의 저장소에서, `main` 브랜치로부터 본인 GitHub 계정과 같은 이름의 브랜치를 만든다.
