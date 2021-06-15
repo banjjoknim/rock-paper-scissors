@@ -15,3 +15,10 @@
 유저의 선택지 : 보
 결과 : 승리
 ```
+
+## 미션 진행 방법
+1. [rock-paper-scissors](https://github.com/banjjoknim/rock-paper-scissors) 저장소를 본인 GitHub 계정으로 fork 한다.
+2. 본인 GitHub 계정과 같은 이름의 브랜치를 만든다.
+3. 해당 브랜치에서 미션을 수행한다.
+4. 미션을 완료했다면 리뷰어에게 이 사실을 고지한다.
+5. 리뷰를 받았다면 해당 피드백을 반영한 뒤 리뷰어가 Merge 할 때 까지 위 과정을 반복한다.
