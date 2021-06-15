@@ -17,7 +17,7 @@
 ```
 
 ## 프로그래밍 요구 사항
-- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)를 참고하여 컨벤션을 지키도록 노력한다.
+- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)를 참고하여 해당 가이드를 잘 지키도록 노력한다.
 - 들여쓰기 depth는 2이하로 제한한다.
 - 메서드의 길이는 15줄 이하로 제한한다.
 - 가능한 한 하나의 메서드는 하나의 일만 하도록 한다.
@@ -27,10 +27,14 @@
 ### 1. [rock-paper-scissors](https://github.com/banjjoknim/rock-paper-scissors) 저장소를 본인 GitHub 계정으로 `fork` 한다.
 
 ### 2. `fork`한 본인 계정 내의 저장소에서, `main` 브랜치로부터 본인 GitHub 계정과 같은 이름의 브랜치를 만든다.
+```
+ex) GitHub 계정 이름이 banjjoknim이라면 fork한 저장소의 main 브랜치에서 banjjoknim 브랜치로 checkout 한 뒤, 미션 진행. 
+```
 
 ### 3. 해당 브랜치에서 미션을 수행한다.
 
-### 4. 미션을 완료했다면 원본 저장소의 본인 계정과 같은 이름의 브랜치로 `Pull Request`를 보낸다.
+### 4. 미션을 완료했다면 원본 저장소의 본인 계정과 같은 이름의 브랜치로 `Pull Request`를 보낸다. 
+- **이때, `Pull Request`는 최초 1회만 진행하면 된다. 그 이후로는 만들어진 `Pull Request`에서 리뷰가 진행된다.**
 
 #### 4-1.
 ![img.png](img.png)
@@ -40,15 +44,14 @@
 ![img_5.png](img_5.png)
 #### 4-4.
 ![img_3.png](img_3.png)
-#### 4-5. 이때, `Pull Request`는 최초 1회만 진행하면 된다. 그 이후로는 만들어진 `Pull Request`에서 리뷰가 진행된다.
-![img_4.png](img_4.png)
 
 ### 5. 미션(또는 피드백 반영)이 완료되었음을 리뷰어에게 고지한다.
 
 ### 6. 리뷰를 통해 피드백을 받았다면 해당 피드백을 반영한 뒤 리뷰어가 해당 `Pull Request`를 `Merge` 할 때 까지 `3 ~ 5`의 과정을 반복한다.
+- **아래는 변경점을 `Pull Request`에 적용하는 과정인데, 어렵지 않다. 그냥 변경하고, 커밋하고, 푸시하면 된다.**
+- **push 하기 전에 pull을 한번 진행한 뒤, push하면 에러 없이 잘 진행된다(좌측).**
+- **그렇지 않을 경우, 아래와 같이 에러가 발생할 수도 있다(우측).**
 
-
-```
-ex) GitHub 계정 이름이 banjjoknim이라면, banjjoknim 브랜치로 checkout 한 뒤, 미션 진행. 
-미션 진행을 완료했다면 원본 저장소의 banjjoknim 브랜치로 Pull Request를 보내고, 리뷰어에게 해당 내용을 고지한다.
-```
+![img_4.png](img_4.png)
+![img_6.png](img_6.png)
+ 
