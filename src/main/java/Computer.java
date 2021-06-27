@@ -8,7 +8,4 @@ public class Computer {
         return selection;
     }
 
-    public String getSelectionValue(){
-        return selection.value();
-    }
 }
