@@ -11,9 +11,10 @@ public enum GameSelections {
         this.selections = selections;
     }
 
-    public String value() {
+    public String getValue() {
         return selections;
     }
+
     public static GameSelections getGameSelection(int selectNumber){
         if(selectNumber==0){
             return SCISSOR;
