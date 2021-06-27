@@ -14,4 +14,17 @@ public enum GameSelections {
     public String value() {
         return selections;
     }
+    public static GameSelections getGameSelection(int selectNumber){
+        if(selectNumber==0){
+            return SCISSOR;
+        }
+        if(selectNumber==1){
+            return ROCK;
+        }
+        return PAPER;
+    }
+
+    public static int makeSelection() {
+        return (int) (Math.random() * 3);
+    }
 }
