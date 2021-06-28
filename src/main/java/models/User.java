@@ -9,7 +9,7 @@ public class User {
         this.selection = selection;
     }
 
-    public GameSelections getSelection(){
+    public GameSelections getSelection() {
         return selection;
     }
 

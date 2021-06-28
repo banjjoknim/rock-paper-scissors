@@ -17,11 +17,11 @@ public enum GameSelections {
         return selections;
     }
 
-    public static GameSelections getGameSelection(int selectNumber){
-        if(selectNumber==0){
+    public static GameSelections getGameSelection(int selectNumber) {
+        if (selectNumber == 0) {
             return SCISSOR;
         }
-        if(selectNumber==1){
+        if (selectNumber == 1) {
             return ROCK;
         }
         return PAPER;
@@ -31,7 +31,7 @@ public enum GameSelections {
         return (int) (Math.random() * 3);
     }
 
-    public static GameResults getGameResult(GameSelections userSelect, GameSelections computerSelect){
+    public static GameResults getGameResult(GameSelections userSelect, GameSelections computerSelect) {
         if (userSelect == computerSelect) {
             return GameResults.DRAW;
         }

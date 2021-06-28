@@ -2,12 +2,8 @@ package controller;
 
 import enums.GameResults;
 import enums.GameSelections;
-import models.Computer;
-import models.User;
 import views.InputView;
 import views.OutputView;
-
-import java.util.Scanner;
 
 public class GameController {
     public static void gameRun() {
