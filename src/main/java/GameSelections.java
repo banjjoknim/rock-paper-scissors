@@ -28,4 +28,16 @@ public enum GameSelections {
     public static int makeSelection() {
         return (int) (Math.random() * 3);
     }
+
+    public static GameResults getGameResult(GameSelections userSelect, GameSelections computerSelect){
+        if (userSelect == computerSelect) {
+            return GameResults.DRAW;
+        }
+        if ((userSelect == SCISSOR && computerSelect == PAPER)
+                || (userSelect == ROCK && computerSelect == SCISSOR)
+                || (userSelect == PAPER && computerSelect == ROCK)) {
+            return GameResults.WIN;
+        }
+        return GameResults.LOSE;
+    }
 }

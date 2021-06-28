@@ -12,20 +12,6 @@ public class Game {
         this.computer = computer;
     }
 
-    private GameResults gameStart() {
-        GameSelections userSelect = user.getSelection();
-        GameSelections computerSelect = computer.getSelection();
-        if (userSelect == computerSelect) {
-            return GameResults.DRAW;
-        }
-        if ((userSelect == GameSelections.SCISSOR && computerSelect == GameSelections.PAPER)
-                || (userSelect == GameSelections.ROCK && computerSelect == GameSelections.SCISSOR)
-                || (userSelect == GameSelections.PAPER && computerSelect == GameSelections.ROCK)) {
-            return GameResults.WIN;
-        }
-        return GameResults.LOSE;
-    }
-
     private void printResult(GameResults result) {
         System.out.println("컴퓨터의 선택지 : " + computer.getSelection().getValue());
         System.out.println("유저의 선택지 : " + user.getSelection().getValue());
@@ -41,7 +27,7 @@ public class Game {
         User user = new User(userSelection);
         Computer computer = new Computer(computerSelection);
         Game game = new Game(user, computer);
-        GameResults result = game.gameStart();
+        GameResults result = GameSelections.getGameResult(userSelection, computerSelection);
         game.printResult(result);
     }
 }
