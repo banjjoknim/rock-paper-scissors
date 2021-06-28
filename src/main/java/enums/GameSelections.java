@@ -1,3 +1,5 @@
+package enums;
+
 public enum GameSelections {
     SCISSOR(0, "가위"),
     ROCK(1, "바위"),

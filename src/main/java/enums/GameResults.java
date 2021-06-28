@@ -1,3 +1,5 @@
+package enums;
+
 public enum GameResults {
     LOSE("패배"), DRAW("무승부"), WIN("승리");
 

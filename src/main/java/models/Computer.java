@@ -1,3 +1,7 @@
+package models;
+
+import enums.GameSelections;
+
 public class Computer {
     private GameSelections selection;
 

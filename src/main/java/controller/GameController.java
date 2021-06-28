@@ -1,13 +1,18 @@
-import java.util.Arrays;
-import java.util.List;
+package controller;
+
+import enums.GameResults;
+import enums.GameSelections;
+import models.Computer;
+import models.User;
+
 import java.util.Scanner;
 
-public class Game {
+public class GameController {
 
     private User user;
     private Computer computer;
 
-    private Game(User user, Computer computer) {
+    private GameController(User user, Computer computer) {
         this.user = user;
         this.computer = computer;
     }
@@ -26,7 +31,7 @@ public class Game {
         GameSelections computerSelection = GameSelections.getGameSelection(GameSelections.makeSelection());
         User user = new User(userSelection);
         Computer computer = new Computer(computerSelection);
-        Game game = new Game(user, computer);
+        GameController game = new GameController(user, computer);
         GameResults result = GameSelections.getGameResult(userSelection, computerSelection);
         game.printResult(result);
     }
