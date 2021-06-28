@@ -15,7 +15,7 @@ public class Game {
     private void printResult(GameResults result) {
         System.out.println("컴퓨터의 선택지 : " + computer.getSelection().getValue());
         System.out.println("유저의 선택지 : " + user.getSelection().getValue());
-        System.out.println("결과 : " + result.value());
+        System.out.println("결과 : " + result.getValue());
     }
 
     public static void main(String[] args) {
