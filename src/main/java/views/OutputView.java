@@ -2,6 +2,9 @@ package views;
 
 import enums.GameResults;
 import enums.GameSelections;
+import models.Computer;
+import models.Game;
+import models.User;
 
 public class OutputView {
     public static void printGameStart() {
@@ -9,9 +12,14 @@ public class OutputView {
         System.out.println("선택지를 입력해주세요. 가위 = 0, 바위 = 1, 보 = 2");
     }
 
-    public static void printGameSelections(GameSelections userSelect, GameSelections computerSelect) {
-        System.out.println("컴퓨터의 선택지 : " + computerSelect.getValue());
-        System.out.println("유저의 선택지 : " + userSelect.getValue());
+    public static void printComputerSelections(Computer computer) {
+        GameSelections computerSelection = computer.getSelection();
+        System.out.println("컴퓨터의 선택지 : " + computerSelection.getValue());
+    }
+
+    public static void printUserSelections(User user) {
+        GameSelections userSelection = user.getSelection();
+        System.out.println("유저의 선택지 : " + userSelection.getValue());
     }
 
     public static void printGameResult(GameResults gameResults) {
