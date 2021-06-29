@@ -24,7 +24,10 @@ public enum GameSelections {
         if (selectNumber == 1) {
             return ROCK;
         }
-        return PAPER;
+        if(selectNumber == 2) {
+            return PAPER;
+        }
+        throw new RuntimeException("올바른 선택지가 아닙니다.");
     }
 
     public static int makeSelection() {
