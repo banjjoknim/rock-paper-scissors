@@ -1,7 +1,10 @@
-package models;
+package service;
 
 import enums.GameResults;
 import enums.GameSelections;
+import models.Computer;
+import models.Game;
+import models.User;
 
 public class GameService {
     public static Game makeGame(int userSelect, int computerSelect) {
