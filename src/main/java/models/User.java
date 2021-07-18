@@ -1,6 +1,6 @@
 package models;
 
-import enums.GameSelections;
+import models.enums.GameSelections;
 
 public class User {
     private GameSelections selection;

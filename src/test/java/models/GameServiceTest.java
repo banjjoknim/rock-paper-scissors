@@ -1,11 +1,9 @@
 package models;
 
-import enums.GameResults;
+import models.enums.GameResults;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import service.GameService;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class GameServiceTest {
     Game gameDraw = GameService.makeGame(0, 0);

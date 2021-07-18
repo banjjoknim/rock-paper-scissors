@@ -1,4 +1,4 @@
-package enums;
+package models.enums;
 
 public enum GameSelections {
     SCISSOR(0, "가위"),

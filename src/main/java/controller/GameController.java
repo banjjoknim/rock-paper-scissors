@@ -1,7 +1,7 @@
 package controller;
 
-import enums.GameResults;
-import enums.GameSelections;
+import models.enums.GameResults;
+import models.enums.GameSelections;
 import models.Game;
 import service.GameService;
 import views.InputView;

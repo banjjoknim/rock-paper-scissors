@@ -1,9 +1,8 @@
 package views;
 
-import enums.GameResults;
-import enums.GameSelections;
+import models.enums.GameResults;
+import models.enums.GameSelections;
 import models.Computer;
-import models.Game;
 import models.User;
 
 public class OutputView {
