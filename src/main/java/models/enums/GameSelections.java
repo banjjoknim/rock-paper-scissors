@@ -23,7 +23,7 @@ public enum GameSelections {
                 return gameSelections;
             }
         }
-        throw new RuntimeException("올바른 선택지가 아닙니다.");
+        throw new IllegalArgumentException("올바른 선택지가 아닙니다.");
     }
 
     public static int makeSelection() {
