@@ -18,14 +18,10 @@ public enum GameSelections {
     }
 
     public static GameSelections getGameSelection(int selectNumber) {
-        if (selectNumber == SCISSOR.selectNumber) {
-            return SCISSOR;
-        }
-        if (selectNumber == ROCK.selectNumber) {
-            return ROCK;
-        }
-        if(selectNumber == PAPER.selectNumber) {
-            return PAPER;
+        for (GameSelections gameSelections : GameSelections.values()) {
+            if (gameSelections.selectNumber == selectNumber) {
+                return gameSelections;
+            }
         }
         throw new RuntimeException("올바른 선택지가 아닙니다.");
     }
