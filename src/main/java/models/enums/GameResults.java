@@ -9,7 +9,7 @@ public enum GameResults {
         this.results = results;
     }
 
-    public String getValue() {
+    public String getResults() {
         return results;
     }
 }

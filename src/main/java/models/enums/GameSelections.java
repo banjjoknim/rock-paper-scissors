@@ -13,7 +13,7 @@ public enum GameSelections {
         this.selections = selections;
     }
 
-    public String getValue() {
+    public String getSelections() {
         return selections;
     }
 

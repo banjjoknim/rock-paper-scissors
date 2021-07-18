@@ -13,15 +13,15 @@ public class OutputView {
 
     public static void printComputerSelections(Computer computer) {
         GameSelections computerSelection = computer.getSelection();
-        System.out.println("컴퓨터의 선택지 : " + computerSelection.getValue());
+        System.out.println("컴퓨터의 선택지 : " + computerSelection.getSelections());
     }
 
     public static void printUserSelections(User user) {
         GameSelections userSelection = user.getSelection();
-        System.out.println("유저의 선택지 : " + userSelection.getValue());
+        System.out.println("유저의 선택지 : " + userSelection.getSelections());
     }
 
     public static void printGameResult(GameResults gameResults) {
-        System.out.println("결과 : " + gameResults.getValue());
+        System.out.println("결과 : " + gameResults.getResults());
     }
 }

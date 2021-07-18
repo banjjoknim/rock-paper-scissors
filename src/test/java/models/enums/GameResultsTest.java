@@ -8,8 +8,8 @@ import static models.enums.GameResults.*;
 class GameResultsTest {
     @Test
     public void testGetResults() {
-        Assertions.assertThat(LOSE.getValue()).isEqualTo("패배");
-        Assertions.assertThat(DRAW.getValue()).isEqualTo("무승부");
-        Assertions.assertThat(WIN.getValue()).isEqualTo("승리");
+        Assertions.assertThat(LOSE.getResults()).isEqualTo("패배");
+        Assertions.assertThat(DRAW.getResults()).isEqualTo("무승부");
+        Assertions.assertThat(WIN.getResults()).isEqualTo("승리");
     }
 }

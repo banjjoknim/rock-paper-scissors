@@ -12,9 +12,9 @@ class GameSelectionsTest {
 
     @Test
     public void testGetValue() {
-        Assertions.assertThat(SCISSOR.getValue()).isEqualTo("가위");
-        Assertions.assertThat(ROCK.getValue()).isEqualTo("바위");
-        Assertions.assertThat(PAPER.getValue()).isEqualTo("보");
+        Assertions.assertThat(SCISSOR.getSelections()).isEqualTo("가위");
+        Assertions.assertThat(ROCK.getSelections()).isEqualTo("바위");
+        Assertions.assertThat(PAPER.getSelections()).isEqualTo("보");
     }
 
     @Test
