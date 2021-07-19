@@ -2,7 +2,10 @@ package models.enums;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static models.enums.GameSelections.*;
 import static models.enums.GameResults.*;
@@ -28,11 +31,21 @@ class GameSelectionsTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {-2, -1, 3, 4})
+    @MethodSource("provideWrongNumberForGameSelection")
     public void testGetWrongGameSelection(int selectNumber) {
         assertThatThrownBy(() -> getGameSelection(selectNumber))
-                .isInstanceOf(RuntimeException.class)
+                .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("올바른 선택지가 아닙니다.");
+    }
+
+    private static Stream<Arguments> provideWrongNumberForGameSelection() {
+        return Stream.of(
+                Arguments.of(-1111),
+                Arguments.of(-1),
+                Arguments.of(3),
+                Arguments.of(4),
+                Arguments.of(1111)
+        );
     }
 
     @Test
