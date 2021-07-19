@@ -36,13 +36,6 @@ class GameSelectionsTest {
     }
 
     @Test
-    public void testMakeSelection() {
-        Assertions.assertThat(makeSelection())
-                .isGreaterThanOrEqualTo(0)
-                .isLessThan(3);
-    }
-
-    @Test
     public void testGetGameResult() {
         Assertions.assertThat(SCISSOR.makeGameResult(SCISSOR))
                 .isEqualTo(DRAW);
