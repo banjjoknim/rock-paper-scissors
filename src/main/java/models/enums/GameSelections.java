@@ -13,10 +13,6 @@ public enum GameSelections {
         this.selections = selections;
     }
 
-    public String getSelections() {
-        return selections;
-    }
-
     public static GameSelections getGameSelection(int selectNumber) {
         for (GameSelections gameSelections : GameSelections.values()) {
             if (gameSelections.selectNumber == selectNumber) {
@@ -36,5 +32,9 @@ public enum GameSelections {
             return GameResults.WIN;
         }
         return GameResults.LOSE;
+    }
+
+    public String getSelections() {
+        return selections;
     }
 }
