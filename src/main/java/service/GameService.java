@@ -18,6 +18,6 @@ public class GameService {
     public static GameResults gameStart(Game game) {
         User user = game.getUser();
         Computer computer = game.getComputer();
-        return GameSelections.getGameResult(user.getSelection(), computer.getSelection());
+        return user.getSelection().makeGameResult(computer.getSelection());
     }
 }

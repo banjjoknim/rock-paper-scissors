@@ -44,23 +44,23 @@ class GameSelectionsTest {
 
     @Test
     public void testGetGameResult() {
-        Assertions.assertThat(getGameResult(SCISSOR, SCISSOR))
+        Assertions.assertThat(SCISSOR.makeGameResult(SCISSOR))
                 .isEqualTo(DRAW);
-        Assertions.assertThat(getGameResult(ROCK, ROCK))
+        Assertions.assertThat(ROCK.makeGameResult(ROCK))
                 .isEqualTo(DRAW);
-        Assertions.assertThat(getGameResult(PAPER, PAPER))
+        Assertions.assertThat(PAPER.makeGameResult(PAPER))
                 .isEqualTo(DRAW);
-        Assertions.assertThat(getGameResult(SCISSOR, ROCK))
+        Assertions.assertThat(SCISSOR.makeGameResult(ROCK))
                 .isEqualTo(LOSE);
-        Assertions.assertThat(getGameResult(ROCK, PAPER))
+        Assertions.assertThat(ROCK.makeGameResult(PAPER))
                 .isEqualTo(LOSE);
-        Assertions.assertThat(getGameResult(PAPER, SCISSOR))
+        Assertions.assertThat(PAPER.makeGameResult(SCISSOR))
                 .isEqualTo(LOSE);
-        Assertions.assertThat(getGameResult(SCISSOR, PAPER))
+        Assertions.assertThat(SCISSOR.makeGameResult(PAPER))
                 .isEqualTo(WIN);
-        Assertions.assertThat(getGameResult(ROCK, SCISSOR))
+        Assertions.assertThat(ROCK.makeGameResult(SCISSOR))
                 .isEqualTo(WIN);
-        Assertions.assertThat(getGameResult(PAPER, ROCK))
+        Assertions.assertThat(PAPER.makeGameResult(ROCK))
                 .isEqualTo(WIN);
     }
 }
