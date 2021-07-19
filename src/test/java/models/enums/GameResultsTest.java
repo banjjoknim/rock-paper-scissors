@@ -1,15 +1,15 @@
 package models.enums;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static models.enums.GameResults.*;
+import static org.assertj.core.api.Assertions.*;
 
 class GameResultsTest {
     @Test
     public void testGetResults() {
-        Assertions.assertThat(LOSE.getResults()).isEqualTo("패배");
-        Assertions.assertThat(DRAW.getResults()).isEqualTo("무승부");
-        Assertions.assertThat(WIN.getResults()).isEqualTo("승리");
+        assertThat(LOSE.getResults()).isEqualTo("패배");
+        assertThat(DRAW.getResults()).isEqualTo("무승부");
+        assertThat(WIN.getResults()).isEqualTo("승리");
     }
 }
