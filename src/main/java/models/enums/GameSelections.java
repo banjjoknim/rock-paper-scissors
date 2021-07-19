@@ -26,10 +26,6 @@ public enum GameSelections {
         throw new IllegalArgumentException("올바른 선택지가 아닙니다.");
     }
 
-    public static int makeSelection() {
-        return (int) (Math.random() * 3);
-    }
-
     public GameResults makeGameResult(GameSelections computerSelect) {
         if (this == computerSelect) {
             return GameResults.DRAW;
